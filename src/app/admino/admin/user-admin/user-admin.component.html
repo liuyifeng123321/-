@@ -1,0 +1,23 @@
+
+<input type="text" class="user">
+<input type="text" class="pass">
+
+<button class="join">加入</button>
+<table border="1">
+    <thead>
+        <th>用户名</th>
+        <th>密码</th>
+    </thead>
+
+    <tbody>
+        <!-- <tr>
+            <td class="tab-word"><li class="liWord"></li></td>
+            <td class="tab-jm"><li class="liJm"></li></td>
+            <td class="tab-fy"><li class="liFy"></li></td>
+        </tr> -->
+        <tr *ngFor="let item of user">
+            <td>{{item.username}}</td>
+            <td>{{item.password}}</td>
+        </tr>
+    </tbody>
+</table>

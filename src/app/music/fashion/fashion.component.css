@@ -1,0 +1,21 @@
+.image img{
+    width: 100%;
+    height: auto;
+    margin: 2.5%;
+}
+.image{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: 2.5%;
+}
+p{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.iframe{
+    display: flex;
+    justify-content: center;
+}

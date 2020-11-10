@@ -1,0 +1,21 @@
+<div class="iframe">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=90% height=450 
+    src="https://music.163.com/outchain/player?type=0&id=2014444849&auto=1&height=430"></iframe>
+</div>
+
+
+<ul>
+    <li *ngFor = 'let new of list'>
+        <div>歌名</div>
+        {{new.name}}
+        
+        <!-- <p>
+            {{item.copywriter}}
+        </p> -->
+        <div>连接地址</div>
+        <p>
+            <a href="{{new.mp3Url}}">{{new.mp3Url}}</a>
+            
+        </p>
+    </li>
+</ul>

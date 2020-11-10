@@ -1,0 +1,27 @@
+.big{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 100px;
+}
+.left div{
+    margin: 6px;
+}
+
+.right{
+    width: 90%;
+}
+table{
+    border: 1px solid black; 
+    margin: 15px 0;
+    width: 90%;
+}
+.number{
+    width: 10%;
+}
+.word,.kana,.translate{
+    width: 30%;
+}

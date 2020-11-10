@@ -1,0 +1,37 @@
+<input type="text" class="id">
+<input type="text" class="wor">
+<input type="text" class="jm">
+<input type="text" class="fy">
+<button class="join">加入</button>
+<table border="1">
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>单词</th>
+            <th>假名</th>
+            <th>翻译</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let item of word" class="trl">
+            <td>
+                <input type="text" class="tex" value="{{item.id}}"> 
+            </td>
+            <td>
+                <input type="text" class="tex" value="{{item.word}}"> 
+            </td>
+            <td>
+                <input type="text" class="tex" value="{{item.jiaming}}">
+            </td>
+            <td>
+                <input type="text" class="tex" value="{{item.translate}}">
+            </td>
+            <td class="but">
+                
+                <input id="but" type="button" value="删除">
+            </td>
+        </tr>
+    </tbody>
+    
+</table>

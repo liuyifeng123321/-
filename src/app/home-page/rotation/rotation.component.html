@@ -1,0 +1,72 @@
+<div class="wrap">
+    <ul class="list">
+        <li class="items active"><img src="./assets/img/jd01.png" alt=""></li>
+        <li class="items"><img src="./assets/img/jd02.png" alt=""></li>
+        <li class="items"><img src="./assets/img/jd03.png" alt=""></li>
+    </ul>
+    <ul class="pointlist">
+        <li class="point active" data-index='0'></li>
+        <li class="point" data-index='1'></li>
+        <li class="point" data-index='2'></li>
+    </ul>
+    <!-- <button type="button" class="but" id="goon"><</button>
+    <button type="button" class="but" id="gonext">></button> -->
+    <script>
+        var items = document.getElementsByClassName('items');//tu
+var points = document.getElementsByClassName('point');//dian
+var goon = document.getElementById('goon');
+var gonext = document.getElementById('gonext');
+
+var index = 0;  //index 表示第几章图片在展示
+
+//清楚active
+var ClearActive = function(){
+for(var i=0; i<items.length; i++){
+    items[i].className = 'items';
+}
+for(var i=0; i<points.length; i++){
+    points[i].className = 'point';
+}
+}
+
+var goindex = function(){
+ClearActive();
+console.log(index);
+points[index].className = 'point active';
+items[index].className = 'items active';
+}
+var gotonext = function(){
+if(index<2){
+    index++;
+}else{
+    index = 0;
+}
+
+goindex();
+}
+var gotoon = function(){
+if( index == 0){
+    index=2;
+}else{
+    index--;
+}
+goindex();
+}
+
+gonext.addEventListener("click", function(){
+gotonext();
+})
+goon.addEventListener("click", function(){
+gotoon();
+})
+
+for (var j = 0; j<points.length; j++){
+points[j].addEventListener("click", function(){
+    var pointIndex = this.getAttribute('data-index');
+    // console.log(pointIndex)
+    index = pointIndex;
+    goindex();
+})
+}
+    </script>
+</div>

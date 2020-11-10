@@ -1,0 +1,7 @@
+.big{
+    display: flex;
+    flex-direction: row;
+}
+.right{
+    width: 100%;
+}

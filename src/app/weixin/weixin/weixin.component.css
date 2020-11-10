@@ -1,0 +1,29 @@
+
+.out{
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 90%;
+    margin-left: 10px;
+}
+.row{
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background-color: blue;
+}
+.hr{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+p{
+    display: inline-block;
+    margin: 15px 0 0 5px;
+    font-weight: 700;
+}
+.my-img img{
+    width: 150px;
+    height: auto;
+}

@@ -1,0 +1,21 @@
+<div class="lb">
+    <app-lb></app-lb>
+</div>
+
+<div class="ifr">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=1230 height=450 
+src="https://music.163.com/outchain/player?type=0&id=939873796&auto=1&height=430"></iframe>
+</div>
+
+<div *ngFor="let sing of list">
+    <!-- {{fashion.coverImgUrl}} -->
+    <div class="image">
+        <img src="{{sing.picUrl}}" alt="">
+        <p>{{sing.name}}</p>
+    </div>
+    
+</div>
+
+
+
+

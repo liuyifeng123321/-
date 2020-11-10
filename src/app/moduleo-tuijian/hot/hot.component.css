@@ -1,0 +1,12 @@
+li{
+    margin: 12px 24px 0 0;
+}
+.tdo{
+    padding-left: 24px;
+    background-color: rgb(147, 197, 247);
+    color: #397CBE;
+}
+table{
+    border: 1px solid #BFE0F9;
+    width: 180px;
+}

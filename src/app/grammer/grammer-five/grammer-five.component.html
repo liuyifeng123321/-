@@ -1,0 +1,27 @@
+<div class="big">
+    <!-- <div class="left">
+        <div class="left-one">
+            <app-dayju></app-dayju>
+        </div>
+        <div class="left-two">
+            <app-hot></app-hot>
+        </div>
+        <div class="left-three">
+            <app-recommend></app-recommend>
+        </div>
+    </div> -->
+    <div class="right">
+        <table border="1px">
+            <tr>
+                <th class="number">编号</th>
+                <th class="word">语法</th>
+                <th class="kana">解释</th>
+            </tr>
+            <tr *ngFor = "let item of grammer">
+                <td>{{item.id}}</td>
+                <td>{{item.program}}</td>
+                <td>{{item.translate}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

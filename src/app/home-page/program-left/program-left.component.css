@@ -1,0 +1,13 @@
+
+.left{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 70px 0 100px;
+}
+.left div{
+    margin: 6px;
+}
+
+div{
+    display: inline-block;
+}

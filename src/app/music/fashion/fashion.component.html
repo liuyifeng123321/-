@@ -1,0 +1,14 @@
+<div class="iframe">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=90% height=450
+    src="https://music.163.com/outchain/player?type=0&id=2671625537&auto=1&height=430"></iframe>
+</div>
+
+<hr>
+<div *ngFor="let fashion of list">
+    <!-- {{fashion.coverImgUrl}} -->
+    <div class="image">
+        <img src="{{fashion.coverImgUrl}}" alt="">
+        <p>{{fashion.name}}</p>
+    </div>
+    
+</div>

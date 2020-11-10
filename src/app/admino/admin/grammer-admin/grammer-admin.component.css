@@ -1,0 +1,19 @@
+table{
+    width: 95%;
+    margin: 30px;
+}
+th{
+    padding: 8px;
+}
+.tex{
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.but input{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    width: 30%;
+    margin: 3% 10%;
+}

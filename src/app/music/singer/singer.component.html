@@ -1,0 +1,11 @@
+<button (click)="getSinger()">
+    获取热门歌手
+</button>
+<div *ngFor="let singer of list">
+    <!-- {{fashion.coverImgUrl}} -->
+    <div class="image">
+        <img src="{{singer.img1v1Url}}" alt="">
+        <p>{{singer.name}}</p>
+    </div>
+    
+</div>
